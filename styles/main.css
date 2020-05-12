@@ -326,6 +326,8 @@ html {
     .photos--wide-right .photos__img:last-child {
       width: calc(67% - 10px); }
   @media screen and (max-width: 820px) {
+    .photos__img {
+      height: 131px; }
     .photos--wide-left .photos__img:first-child {
       width: calc(50% - 10px); }
     .photos--wide-left .photos__img:last-child {
@@ -357,9 +359,7 @@ html {
   font-size: 16px;
   line-height: 16px;
   color: #fff;
-  background-color: #0067df;
-  -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
-          box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+  background-color: #0075ff;
   -webkit-transition: background-color 0.3s, color 0.3s, border 0.3s;
   transition: background-color 0.3s, color 0.3s, border 0.3s;
   border-radius: 8px; }
@@ -371,15 +371,12 @@ html {
     -webkit-box-shadow: none;
             box-shadow: none; }
   .button:hover {
-    border: 2px solid #0075ff;
-    color: #0075ff;
-    background-color: #fff; }
-  .button--gallery:hover {
-    border: none;
-    color: #fff;
     background-color: #0067df;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+    -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+            box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46); }
+  .button--gallery:hover {
+    color: #fff;
+    background-color: #0067df; }
   @media screen and (max-width: 500px) {
     .button {
       width: 100%; } }
