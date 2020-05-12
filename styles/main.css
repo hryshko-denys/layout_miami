@@ -230,8 +230,8 @@ html {
     .nav__item--active {
       background-color: inherit;
       border-radius: 0; }
-    .nav__item {
-      padding-bottom: 32px; }
+    .nav__link {
+      padding: 8px 8px 16px 0; }
     .nav__link--active {
       padding: 0; } }
 
