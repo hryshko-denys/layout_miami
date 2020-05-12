@@ -36,7 +36,7 @@ button {
 a {
   -webkit-transition: color 0.2s;
   transition: color 0.2s; }
-  a:hover {
+  a:hover, a:visited {
     color: #9fadc2; }
   a:focus {
     font-weight: bold; }
@@ -141,12 +141,20 @@ html {
     .header__link--telephone {
       top: 448px;
       -webkit-transform: translateX(-300%);
-              transform: translateX(-300%); }
+              transform: translateX(-300%);
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: -webkit-transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s; }
     .header__link--call-back {
       top: 480px;
       left: 20px;
       -webkit-transform: translateX(-300%);
-              transform: translateX(-300%); }
+              transform: translateX(-300%);
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: -webkit-transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s; }
     .header__capture {
       margin-top: 330px;
       max-width: 295px;
@@ -159,7 +167,11 @@ html {
     .header__nav {
       margin-top: 48px;
       -webkit-transform: translateX(-300%);
-              transform: translateX(-300%); }
+              transform: translateX(-300%);
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: -webkit-transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s; }
     .header__toggler:checked ~ .header__nav,
     .header__toggler:checked ~ .header__link--telephone,
     .header__toggler:checked ~ .header__link--call-back {
@@ -196,11 +208,9 @@ html {
 
 .nav__link {
   display: block;
+  padding: 8px 24px;
   color: #fff;
   line-height: 16px; }
-
-.nav__link--active {
-  padding: 8px 24px; }
 
 @media screen and (max-width: 820px) {
   .nav {
@@ -371,12 +381,14 @@ html {
     -webkit-box-shadow: none;
             box-shadow: none; }
   .button:hover {
+    cursor: pointer;
     background-color: #0067df;
     -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
             box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46); }
   .button--gallery:hover {
     color: #fff;
-    background-color: #0067df; }
+    background-color: #0067df;
+    border-color: #0067df; }
   @media screen and (max-width: 500px) {
     .button {
       width: 100%; } }
