@@ -325,6 +325,9 @@ html {
        object-fit: cover;
     -o-object-position: center;
        object-position: center; }
+  .photos__img:hover {
+    -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+            box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46); }
   .photos--wide-left .photos__img:first-child {
     width: calc(67% - 10px); }
   .photos--wide-left .photos__img:last-child {
