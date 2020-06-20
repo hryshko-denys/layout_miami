@@ -36,7 +36,7 @@ button {
 a {
   -webkit-transition: color 0.2s;
   transition: color 0.2s; }
-  a:hover, a:visited {
+  a:hover {
     color: #9fadc2; }
   a:focus {
     font-weight: bold; }
@@ -61,6 +61,8 @@ html {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff; }
+  .header--mobile-bg {
+    background: #0075ff; }
   .header__container {
     position: relative;
     max-width: 1260px;
