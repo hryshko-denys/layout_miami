@@ -13,6 +13,7 @@ textarea,
 a {
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: #000;
   outline: none; }
@@ -477,6 +478,7 @@ html {
   .input::placeholder {
     color: #b9c1ce; }
   .input__textarea {
+    font-family: inherit;
     height: 144px; }
     .input__textarea::-webkit-input-placeholder {
       font-family: "Roboto", sans-serif; }
